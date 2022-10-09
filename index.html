@@ -1,6 +1,214 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>www.addme.mom</h1>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Turtle School Counter-Strike Community">
+        <meta name="author" content="Q4-Bi.">
+        <title>MODERN Coming Soon HTML Template</title>
+        <!--Favicon -->
+        <link rel="icon" href="favicon.ico">
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font-Awesome -->
+        <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Google Font -->
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+        <!-- Modal Overlay -->
+        <link href="assets/css/modal-overlay.css" rel="stylesheet">
+        <!-- Custom Styles -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/blue.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- Preloader -->
+        <div id="preloader"></div>
+
+        <div id="wrapper">
+            <div class="container">
+                <div class="main-container">
+                    <!-- Header Logo START -->
+                    <header class="header-logo">
+                        <img src="images/logo.png" alt="logo" />
+                    </header>
+                    <!-- Header Logo END -->
+
+                    <!-- Page Header -->
+                    <h1 class="title"><span>Turtle School</span> Gaming Community</h1>
+
+                    <!-- Page Slogan -->
+                    <p class="slogan-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet sed tellus ut condimentum.
+                        <br> Aenean hendrerit, nisl sit amet molestie eleifend, magna augue pulvinar enim, nec mattis quam eros, non ex.
+                    </p>
+
+                    <!-- Subscribe Form START -->
+                    <p class="subscribe-title">Enter Your Email to Subscribe</p>
+                    <form class="subscribe-form" id="subscribe-form">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button type="submit" id="btn-subscribe">Subscribe</button>
+                    </form>
+                    <div id="subscribe-msg"></div>
+                    <!-- Subscribe Form END -->
+
+                    <!-- Contact Button -->
+                    <a class="btn-effect" id="trigger-overlay"><span class="hover-bg reset"><span class="hover-text reset">Contact</span></span>Contact</a>
+
+                    <!-- Social Icons Section START -->
+                    <div class="social-icon">
+                        <ul>
+                            <li>
+                                <a class="facebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a class="google-plus" href="#" title="Google+"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a class="linked-in" href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a class="pinterest" href="#" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Social Icons Section END -->
+                </div>
+            </div>
+
+            <!-- Modal Popup START -->
+            <div class="overlay overlay-modal">
+                <!-- Close Button -->
+                <a class="overlay-close"><i class="fa fa-close fa-2x"></i></a>
+
+                <div class="container">
+                    <!-- Modal Popup Title and Description START -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="title">How To <span>Contact Us</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                                <br> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal Popup Title and Description END -->
+
+                    <div class="row">
+                        <div class="col-md-8 clearfix overlay-left">
+                            <h4 class="text-left">Send Us A Message</h4>
+
+                            <!-- Contact Form START -->
+                            <form class="contact-form" id="contact-form">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input name="name" placeholder="Name" class="form-control" required type="text">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input name="email" placeholder="Email" class="form-control" required type="email">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input name="subject" placeholder="Subject" class="form-control" required type="text">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <textarea name="message" placeholder="Message" class="form-control" required rows="7"></textarea>
+                                    </div>
+                                </div>
+                                <div id="response-message"></div>
+                                <button class="btn btn-send-msg pull-right" type="submit" id="btn-contact">Send Message</button>
+                            </form>
+                            <div id="contact-msg"></div>
+                            <!-- Contact Form END -->
+                        </div>
+
+                        <div class="col-md-4 overlay-right">
+                            <!-- Contact Address START -->
+                            <h4 class="text-left">Address</h4>
+
+                            <address>
+                <strong>Main Office</strong><br>
+
+                <i class="fa fa-map"></i> 123, Your Location, Street, City, Country<br>
+                <i class="fa fa-phone"></i> +01 234 567 890<br>
+                <i class="fa fa-fax"></i> +01 234 567 890<br>
+                <i class="fa fa-envelope"></i> <a href="mailto:email@your-website.com">email@your-website.com</a>
+                </address>
+
+                            <address>
+                <strong>Support Information</strong><br>
+
+                <i class="fa fa-map"></i> 123, Your Location, Street, City, Country<br>
+                <i class="fa fa-phone"></i> +01 234 567 890<br>
+                <i class="fa fa-fax"></i> +01 234 567 890<br>
+                <i class="fa fa-envelope"></i> <a href="mailto:email@your-website.com">email@your-website.com</a>
+                </address>
+
+                            <address>
+                <strong>Press Enquires</strong><br>
+
+                <i class="fa fa-map"></i> 123, Your Location, Street, City, Country<br>
+                <i class="fa fa-phone"></i> +01 234 567 890<br>
+                <i class="fa fa-fax"></i> +01 234 567 890<br>
+                <i class="fa fa-envelope"></i> <a href="mailto:email@your-website.com">email@your-website.com</a>
+                </address>
+                            <!-- Contact Address END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Popup END -->
+        </div>
+
+        <div id="bg-pattern">
+            <canvas id="pattern-canvas"></canvas>
+        </div>
+
+        <!-- JQuery -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Modernizr JavaScript -->
+        <script src="assets/js/modernizr.custom.js"></script>
+        <!-- Extensible DOM utility JavaScript -->
+        <script src="assets/js/classie.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Pre-Loader -->
+        <script src="assets/js/fakeLoader.min.js"></script>
+        <!-- ********** Page Specific Script START ********** -->
+        <!-- Background Mouse Move Animation -->
+        <script src="assets/js/TweenLite.min.js"></script>
+        <script src="assets/js/EasePack.min.js"></script>
+        <script src="assets/js/rAF.js"></script>
+        <!-- Youtube Background Video -->
+        <script src="plugins/tubular/jquery.tubular.1.0.js"></script>
+        <!-- ********** Page Specific Script END ********** -->
+        <!-- Utility Functions -->
+        <script src="assets/js/util.js"></script>
+        <!-- Custom Script -->
+        <script src="assets/js/main.js"></script>
+        <!-- Page Specific Custom Script START -->
+        <script type="text/javascript">
+            $(function() {
+                //Set YouTube Video Background
+                $('#wrapper').tubular({
+                    videoId: 'edYCtaNueQY',
+                    start: 7,
+                    mute: true
+                });
+
+                //Mouse Effect
+                initHeader($('#bg-pattern'), $('#pattern-canvas'));
+            });
+        </script>
+    </body>
 </html>

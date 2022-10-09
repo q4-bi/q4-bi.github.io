@@ -1,0 +1,512 @@
+/*======================================================================
+
+Project: Modern Coming Soon HTML Template
+Version: 1.0
+Author: A.M.Roomi
+Profile: https://www.themeforest.net/user/modern_themes
+
+----------------------------------------------------------------------
+                    ***** TABLE OF CONTENTS *****
+----------------------------------------------------------------------
+  01. General
+  02. Preloader
+  03. Countdown
+  04. Form Controll
+  05. Subscribe Form
+  06. Subscribe Button
+  07. Contact Button
+  08. Contact Form
+  09. Social Icon
+  10. Media Queries
+    10.1. Countdown
+    10.2. Subscribe Form
+    10.3. Subscribe Button
+
+======================================================================*/
+
+
+/******************************
+  01. General
+******************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 0 !important;
+    outline: none;
+}
+
+body {
+    color: #dadada;
+    overflow-x: hidden;
+    font-family: oswald;
+    line-height: 1.75;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#gradient {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0.7;
+    z-index: -999998;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+address i.fa {
+    width: 10px;
+    margin-right: 10px;
+}
+
+#bg-pattern {
+    background: rgba(0, 0, 0, 0.5) url('../../images/bg-pattern.png') repeat scroll left top;
+    bottom: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -999998;
+}
+
+#tubular-container,
+#vimelar-container {
+    z-index: -1000000 !important;
+}
+
+header.header-logo {
+    text-align: center;
+}
+
+.main-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+p.slogan-text {
+    text-align: center;
+    font-size: 16px;
+}
+
+p.subscribe-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 28px 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#particles-js,
+#particleground {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999998;
+}
+
+
+/******************************
+  02. Preloader
+******************************/
+
+#preloader>.fl {
+    margin: auto;
+    display: table;
+}
+
+
+/******************************
+  03. Countdown
+******************************/
+
+.countdown-row {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.countdown-section {
+    border-left: 1px dotted #dadada;
+    border-color: rgba(218, 218, 218, 0.8);
+    color: #dadada;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 3px 12px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.countdown-section:first-child {
+    border-left: 0;
+}
+
+.countdown-amount {
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1;
+    padding-bottom: 5px;
+}
+
+.countdown-period {
+    font-weight: 700;
+}
+
+
+/******************************
+  04. Form Controll
+******************************/
+
+input::-webkit-input-placeholder,
+0textarea::-webkit-input-placeholder {
+    color: #ccc;
+    font-weight: normal;
+    font-style: italic;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #ccc;
+    font-weight: normal;
+    font-style: italic;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #ccc;
+    font-weight: normal;
+    font-style: italic;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #ccc;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-control:focus {
+    border: 0 none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.overlay .btn-send-msg {
+    color: #fff;
+}
+
+.overlay .btn-send-msg:hover {
+    color: #fff;
+}
+
+.overlay-left h4,
+.overlay-left #contact-msg {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: -5px;
+}
+
+
+/******************************
+  05. Subscribe Form
+******************************/
+
+.subscribe-form:before,
+.subscribe-form:after {
+    content: '';
+    display: table;
+}
+
+.subscribe-form:after {
+    clear: both;
+}
+
+.subscribe-form {
+    width: 470px;
+    padding: 15px;
+    margin: 5px auto 5px auto;
+    background: #444;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.subscribe-form input {
+    width: 330px;
+    height: 40px;
+    padding: 10px 5px;
+    color: #fff;
+    border: 0;
+    background: rgba(169, 169, 169, 0.5) none repeat scroll 0 0;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.subscribe-form input:focus {
+    outline: 0;
+    background: rgba(169, 169, 169, 0.5) none repeat scroll 0 0;
+}
+
+
+/******************************
+  06. Subscribe Button
+******************************/
+
+.subscribe-form button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'Oswald';
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.subscribe-form button:active,
+.subscribe-form button:focus {
+    outline: 0;
+}
+
+.subscribe-form button:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    top: 12px;
+    left: -6px;
+}
+
+.subscribe-form button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+/******************************
+  07. Contact Button
+******************************/
+
+.btn-effect {
+    height: 51px;
+    margin-top: 50px;
+    min-width: 218px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 51px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-effect:hover {
+    text-decoration: none;
+}
+
+.btn-effect .hover-text {
+    color: #fff;
+    position: absolute;
+    left: 55%;
+    opacity: 0;
+    -webkit-transform: skew(42deg) translateX(-39px);
+    -moz-transform: skew(42deg) translateX(-39px);
+    -ms-transform: skew(42deg) translateX(-39px);
+    -o-transform: skew(42deg) translateX(-39px);
+    transform: skew(42deg) translateX(-39px);
+}
+
+.hover-text.enter {
+    left: 55%;
+    opacity: 1;
+    -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+    -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+    -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+    -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+    transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+}
+
+.hover-text.leave {
+    left: 100%;
+    opacity: 0;
+    -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+    -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+    -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+    -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+    transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+}
+
+.hover-text.reset {
+    left: 55%;
+    opacity: 1;
+}
+
+.btn-effect .hover-bg {
+    display: block;
+    width: 122%;
+    height: 102%;
+    position: absolute;
+    -webkit-transform: skew(-42deg);
+    -moz-transform: skew(-42deg);
+    -ms-transform: skew(-42deg);
+    -o-transform: skew(-42deg);
+    transform: skew(-42deg);
+    left: -133%;
+    top: 0;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.hover-bg.enter {
+    left: -11%;
+    -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-bg.leave {
+    left: 111%;
+    -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-bg.reset {
+    left: -133%;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+
+/******************************
+  08. Contact Form
+******************************/
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px;
+    padding: 10px 5px;
+    color: #fff;
+    border: 0;
+    background: rgba(169, 169, 169, 0.5) none repeat scroll 0 0;
+    border-radius: 0;
+}
+
+.contact-form input {
+    height: 40px;
+}
+
+
+/******************************
+  09. Social Icon
+******************************/
+
+.social-icon>ul>li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.social-icon a {
+    color: #fff;
+}
+
+.social-icon a.facebook:hover {
+    color: #3B5998 !important;
+}
+
+.social-icon a.twitter:hover {
+    color: #00aced !important;
+}
+
+.social-icon a.google-plus:hover {
+    color: #dd4b39 !important;
+}
+
+.social-icon a.linked-in:hover {
+    color: #007bb6 !important;
+}
+
+.social-icon a.pinterest:hover {
+    color: #cb2027 !important;
+}
+
+
+/******************************
+  10. Media Queries
+******************************/
+
+@media screen and (max-width: 520px) {
+    /*
+    10.1. Countdown
+  */
+    .countdown-amount {
+        font-size: 25px;
+    }
+    /*
+    10.2. Subscribe Form
+  */
+    .subscribe-form {
+        width: 300px;
+    }
+    .subscribe-form input {
+        width: 190px;
+    }
+    /*
+    10.3. Subscribe Button
+  */
+    .subscribe-form button {
+        width: 80px;
+    }
+}

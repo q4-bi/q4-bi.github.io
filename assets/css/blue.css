@@ -1,0 +1,99 @@
+/*======================================================================
+
+Project: Modern Coming Soon HTML Template
+Version: 1.0
+Author: A.M.Roomi
+Profile: https://www.themeforest.net/user/modern_themes
+
+----------------------------------------------------------------------
+                    ***** TABLE OF CONTENTS *****
+----------------------------------------------------------------------
+  01. General
+  02. Form Controll
+  03. Subscribe Button
+  04. Contact Button
+
+======================================================================*/
+
+/******************************
+  01. General
+******************************/
+::selection {
+  background: #ff5e4d;
+}
+::-moz-selection {
+  background: #ff5e4d;
+}
+
+a, a:hover {
+  color: #ff4733;
+}
+
+address i.fa {
+  color: #ff4733;
+}
+
+h1.title > span,
+h2.title > span {
+  color: #ff4733;
+}
+
+/******************************
+  02. Form Controll
+******************************/
+.overlay .btn-send-msg {
+  background: #ff4733 none repeat scroll 0 0;
+}
+
+.overlay .overlay-close:hover {
+  color: #ff4733;
+}
+
+.overlay .btn-send-msg:hover {
+  background: #ff5e4d none repeat scroll 0 0;
+}
+
+/******************************
+  03. Subscribe Button
+******************************/
+.subscribe-form button {
+  background: #ff4733;
+}
+
+.subscribe-form button:active,
+.subscribe-form button:focus {
+  background: #ff4733;
+}
+
+.subscribe-form button:before {
+  border-color: transparent #ff4733 transparent;
+}
+
+.subscribe-form button:focus:before,
+.subscribe-form button:active:before {
+  border-right-color: #ff4733;
+}
+
+.subscribe-form button:hover {
+  background: #ff5e4d;
+}
+
+.subscribe-form button:hover:before {
+  border-right-color: #ff5e4d;
+}
+
+/******************************
+  04. Contact Button
+******************************/
+.btn-effect {
+  color: #ff4733;
+  border: 2px solid #ff4733;
+}
+
+.btn-effect:hover {
+  color: #ff4733;
+}
+
+.btn-effect .hover-bg {
+  background-color: #ff4733;
+}
